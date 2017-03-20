@@ -1,10 +1,16 @@
 {
     "extends": "airbnb",
-        "parser": "babel-eslint",
-        "ecmaFeatures": {
-            "classes": true,
-        },
-        "rules": {
-            "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
-        }
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "ecmaFeatures": {
+        "classes": true,
+    },
+    "rules": {
+        "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+        "comma-dangle": ["off"],
+        "import/prefer-default-export": ["off"],
+        "react/forbid-prop-types": ["off"]
+    }
 }
