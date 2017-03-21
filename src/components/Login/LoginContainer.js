@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import LoginComponent from './LoginComponent';
+import validate from '../../validators/login';
 
 const LoginContainer = ({ handleSubmit, pristine, valid }) => (
   <LoginComponent
@@ -28,5 +29,6 @@ export default connect(
   null,
   mapDispatchToProps
 )(reduxForm({
-  form: 'user'
+  form: 'login',
+  validate
 })(LoginContainer));
