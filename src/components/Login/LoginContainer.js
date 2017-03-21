@@ -3,12 +3,17 @@ import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import LoginComponent from './LoginComponent';
 
-const LoginContainer = ({ handleSubmit }) => (
-  <LoginComponent onSubmit={handleSubmit} />
+const LoginContainer = ({ handleSubmit, pristine, valid }) => (
+  <LoginComponent
+    canSubmit={!pristine && valid}
+    onSubmit={handleSubmit}
+  />
 );
 
 LoginContainer.propTypes = {
-  handleSubmit: PropTypes.func.isRequired
+  handleSubmit: PropTypes.func.isRequired,
+  pristine: PropTypes.bool.isRequired,
+  valid: PropTypes.bool.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({

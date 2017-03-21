@@ -1,13 +1,15 @@
+import { Alert } from 'react-native';
 import { call, put, takeLatest } from 'redux-saga/effects';
+import { Actions } from 'react-native-router-flux';
 import Reddit from '../api/Reddit';
 
 function* fetchHotList() {
   try {
-    const response = yield call(Reddit.fetchHotList);
-    console.log(response);
+    const hotList = yield call(Reddit.fetchHotList);
+    yield put({ type: 'SET_HOT_LIST', data: hotList });
   } catch (err) {
+    Alert.alert('Error', 'Try again later', [{ text: 'Close', onPress: Actions.LOGIN }]);
   }
-  yield put({ type: 'SET_HOT_LIST', data: 'hi' });
 }
 
 export function* watchHotListAsync() {

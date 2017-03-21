@@ -15,7 +15,7 @@ const sagaMiddleware = createSagaMiddleware();
 const ReduxRouter = connect()(Router);
 const scenes = Actions.create(
   <Scene key="ROOT">
-    <Scene key="LOGIN" component={Login} title="Login" />
+    <Scene key="LOGIN" component={Login} title="Login" type={ActionConst.REPLACE} initial />
     <Scene key="REDDIT" component={Reddit} title="Reddit" type={ActionConst.REPLACE} />
   </Scene>
 );

@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 import RedditComponent from './RedditComponent';
 
 class RedditContainer extends Component {
+
   static propTypes = {
-    fetchHotList: PropTypes.func.isRequired
+    fetchHotList: PropTypes.func.isRequired,
+    hotList: PropTypes.array.isRequired
   };
 
   componentDidMount() {
@@ -13,13 +15,15 @@ class RedditContainer extends Component {
 
   render() {
     return (
-      <RedditComponent />
+      <RedditComponent
+        data={this.props.hotList}
+      />
     );
   }
 }
 
 const mapStateToProps = state => ({
-  hotList: state.reddit.hot
+  hotList: state.reddit.hotList
 });
 
 const mapDispatchToProps = dispatch => ({

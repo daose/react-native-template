@@ -1,5 +1,5 @@
 const reddit = (state = {
-  hotList: null
+  hotList: []
 }, action) => {
   switch (action.type) {
     case 'SET_HOT_LIST':
