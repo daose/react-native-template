@@ -17,6 +17,12 @@ const MenuComponent = () => (
         title="Network Request"
       />
     </View>
+    <View style={styles.button}>
+      <Button
+        onPress={Actions.TABS}
+        title="Tabs"
+      />
+    </View>
   </ScrollView>
 );
 
