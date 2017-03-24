@@ -1,5 +1,5 @@
 import { watchHotListAsync } from './reddit';
-import { watchLoginAsync } from './user';
+import { watchLoginAsync } from './login';
 
 export default function* rootSaga() {
   yield [
