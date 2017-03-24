@@ -23,6 +23,12 @@ const MenuComponent = () => (
         title="Tabs"
       />
     </View>
+    <View style={styles.button}>
+      <Button
+        onPress={Actions.MAPS}
+        title="Maps"
+      />
+    </View>
   </ScrollView>
 );
 

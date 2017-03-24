@@ -1,5 +1,8 @@
 apply plugin: "com.android.application"
 
+def apikeys = new Properties()
+apikeys.load(new FileInputStream(rootProject.file("apikeys.properties")))
+
 import com.android.build.OutputFile
 
 /**
@@ -105,7 +108,12 @@ android {
         }
     }
     buildTypes {
+        debug {
+            resValue "string", "GOOGLE_API_KEY", apikeys["GOOGLE"]
+        }
         release {
+            resValue "string", "GOOGLE_API_KEY", apikeys["GOOGLE"]
+
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
@@ -126,6 +134,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-maps')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules

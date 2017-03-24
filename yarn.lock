@@ -3425,6 +3425,10 @@ react-native-experimental-navigation@0.26.x:
     fbjs "^0.8.1"
     react-addons-pure-render-mixin "^15.0.2"
 
+react-native-maps@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.13.1.tgz#ed2a7e62f155a51f43c49742eba5bc313eaf2f1e"
+
 react-native-router-flux@^3.38.0:
   version "3.38.0"
   resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-3.38.0.tgz#f5f8ec2875b46f96f61006ff502d0d80268e6ce2"

@@ -10,6 +10,7 @@ import Reddit from './components/Reddit';
 import Menu from './components/Menu';
 import TabDummy from './components/Tabs/TabDummy';
 import TabIcon from './components/Tabs/TabIcon';
+import Maps from './components/Maps';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -25,6 +26,7 @@ const scenes = Actions.create(
       <Scene key="TAB_THREE" component={TabDummy} icon={TabIcon} title="Dummy Three" duration={0} />
       <Scene key="TAB_FOUR" component={TabDummy} icon={TabIcon} title="Dummy Four" duration={0} />
     </Scene>
+    <Scene key="MAPS" component={Maps} title="Maps" duration={0} />
   </Scene>
 );
 

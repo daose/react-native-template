@@ -4,7 +4,6 @@ import styles from './styles';
 
 const TabDummyComponent = ({ title }) => (
   <View style={styles.container}>
-    {console.log(title)}
     <Text>{title}</Text>
   </View>
 );

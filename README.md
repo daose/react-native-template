@@ -15,3 +15,6 @@ The app covers:
 2. Run `yarn install`
 3. Run `react-native run-android` (or `ios`)
   - If it doesn't work make sure the JS server is running first with `yarn start`
+
+For `Maps` demo on android, you'll need to provide your own [Google API key](https://code.google.com/apis/console/).
+In `./android/app/apikeys.properties`, fill in your own API key. (remember to rerun `react-native run-android` afterwards!)
