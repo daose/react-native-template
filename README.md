@@ -1,13 +1,13 @@
 # React Native Template
 
-This is a simple template that shows __a very opiniated__ way of getting a React Native project up and running quickly.
+This is an experimental branch
 
 The app covers:
 
 - Global state management with [`redux`](http://redux.js.org/)
 - Async requests with fetch and [`redux-saga`](https://github.com/redux-saga/redux-saga)
 - Form validation with [`redux-form`](https://github.com/erikras/redux-form)
-- Navigation with [`react-native-router-flux`](https://github.com/aksonov/react-native-router-flux)
+- Navigation with [`react-navigation`](https://github.com/react-community/react-navigation)
 
 ## Installation
 
