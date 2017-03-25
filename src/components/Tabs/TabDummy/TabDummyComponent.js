@@ -1,15 +1,8 @@
-import React, { PropTypes } from 'react';
-import { View, Text } from 'react-native';
-import styles from './styles';
+import React from 'react';
+import { View } from 'react-native';
 
-const TabDummyComponent = ({ title }) => (
-  <View style={styles.container}>
-    <Text>{title}</Text>
-  </View>
+const TabDummyComponent = () => (
+  <View />
 );
-
-TabDummyComponent.propTypes = {
-  title: PropTypes.string.isRequired
-};
 
 export default TabDummyComponent;

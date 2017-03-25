@@ -36,14 +36,12 @@ export default class RedditComponent extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={RedditComponent.renderRow}
-          enableEmptySections
-          initialListSize={5}
-        />
-      </View>
+      <ListView
+        dataSource={this.state.dataSource}
+        renderRow={RedditComponent.renderRow}
+        enableEmptySections
+        initialListSize={5}
+      />
     );
   }
 }

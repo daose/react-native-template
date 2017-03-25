@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "lint": "node_modules/eslint/bin/eslint.js ./src",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
@@ -11,6 +12,7 @@
     "react-native": "0.42.3",
     "react-native-maps": "^0.13.1",
     "react-native-router-flux": "^3.38.0",
+    "react-navigation": "^1.0.0-beta.7",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-form": "^6.5.0",
