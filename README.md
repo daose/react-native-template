@@ -1,7 +1,5 @@
 # React Native Template
 
-This is an experimental branch
-
 The app covers:
 
 - Global state management with [`redux`](http://redux.js.org/)
