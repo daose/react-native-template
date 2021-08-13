@@ -9,6 +9,6 @@ export default class Reddit {
       .then(verifyResponse)
       .then(response => response.json())
       .then(json => json.data.children)
-      .catch(handleError);
+      .catch(handleError)
   }
 }
